@@ -35,21 +35,42 @@ header {
 }
 
 .header-center {
-  flex: vertical; 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px; 
+  gap: 8px; 
   font-family: 'Lexend', sans-serif;
-  font-size: 36px;
+}
+
+.header-center h1 {
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 0;
   color: #A08963;
+  margin: 0;
+}
+
+#menu ul {
+  display: flex;
+  align-items: center;
+  gap: 68px; 
+  size: 12px;
+  list-style: none;
+  margin: 12px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-size: 15px;
+    color: #A08963;
+    font-weight: 400;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 16px; /* Espaçamento entre os links */
+  gap: 16px; 
 }
 
 
@@ -90,7 +111,7 @@ footer {
 .footer-left {
   display: flex;
   align-items: center;
-  gap: 16px;  /* Espaçamento entre logo e texto */
+  gap: 16px; 
 }
 
 .footer-left img {
