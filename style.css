@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100%;
-  max-width: 1280px; 
   height: 100px;
   border-bottom: 1px solid #000;
   padding: 0 10px;
@@ -55,7 +58,7 @@ header {
   align-items: center;
   gap: 68px; 
   size: 12px;
-  list-style: none;
+  list-style: none; 
   margin: 12px;
 }
 
@@ -76,15 +79,185 @@ header {
 
 main {
   width: 100%;
-  max-width: 1280px;
-  padding-bottom: 100px;
+  font-family: 'Lexend', sans-serif;
   display: flex; 
   flex-direction: column; 
   gap: 24px;
   margin: 0 auto; 
 }
 
+.imagem-banner {
+    width: 100%;
+    height: 272px;
+    display: block;
+    margin: 0 auto;
+}
 
+.sobre-nos {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 0 37px;
+}
+
+.linha-com-ponto {
+  width: 100%;  
+  max-width: 500px;
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+  gap: 16px;     
+  padding-left: 150px;  
+}
+
+.linha {
+  width: 222px;
+  height: 1px;
+  background-color: #A08963;
+}
+
+.ponto {
+  width: 8px;
+  height: 8px;
+  background-color: #A08963; 
+  border-radius: 50%;      
+}
+
+.sobre-nos p {
+  max-width: 650px;
+  height: 60px;
+  text-align: justify;
+  font-family: 'Lexend', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #1E1E1E;
+  margin: 40px 100px; 
+  padding-left: 150px;
+}
+
+
+.nosso-cafe {
+    display: flex;
+    align-items: center;   
+    background-color: #B89C73; 
+}
+
+.nosso-cafe img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.texto-cafe h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E1E1E; 
+    text-align: left;
+    margin-left: 200px;
+}
+
+.texto-cafe p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1E1E1E;
+    max-width: 600px;
+    text-align: justify;
+    margin-left: 200px;
+}
+
+
+.nosso-ambiente {
+    display: flex;
+    align-items: center;   
+    background-color: #B89C73; 
+    flex-direction: row-reverse;
+}
+
+.nosso-ambiente img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.nosso-ambiente h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E1E1E; 
+    text-align: left;
+}
+
+.nosso-ambiente p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1E1E1E;
+    max-width: 600px;
+    text-align: justify;
+    margin-right: 250px;
+}
+
+
+.brewmaster {
+    position: relative;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/gerentes.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.conteudo-brewmaster {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+
+.brewmaster::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.78);
+    backdrop-filter: blur(5px);
+}
+
+.conteudo-brewmaster h2 {
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}   
+
+.conteudo-brewmaster p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    max-width: 600px;
+    text-align: justify;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.btn-acessar {
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 28px; 
+  border: 2px solid #FFFFFF;
+  border-radius: 50px; 
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-top: 32px;
+}
 
 
 footer {
